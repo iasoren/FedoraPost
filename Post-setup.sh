@@ -51,7 +51,7 @@ dnf install -y qbittorrent
 #Insync
 rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 cd /etc/yum.repos.d/
-wget https://github.com/Alcyoneous/FedoraPost/insync.repo
+wget https://github.com/Alcyoneous/FedoraPost/blob/master/insync.repo
 cd /%HOME/Downloads
 dnf install -y insync
 
