@@ -20,6 +20,7 @@ dnf install -y @virtualization
 dnf install -y libvirt
 
 #Utilities
+dnf install -y nano
 dnf install -y simple-scan
 dnf config-manager --add-repo=http://negativo17.org/repos/fedora-handbrake.repo
 dnf install -y HandBrake-gui
@@ -50,9 +51,7 @@ dnf install -y qbittorrent
 
 #Insync
 rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-cd /etc/yum.repos.d/
-wget https://github.com/Alcyoneous/FedoraPost/blob/master/insync.repo
-cd /%HOME/Downloads
+dnf config-manager --add-repo http://yum.insynchq.com/fedora/$releasever/
 dnf install -y insync
 
 #Multimedia
@@ -72,3 +71,11 @@ rpm -ivh wps-office-10.1.0.5672-1.a21.x86_64.rpm
 
 #Remove undesired packages
 dnf remove -y libreoffice*
+
+#This is a list of extensions to Gnome that I have installed/enabled
+# Applications Menu
+# Background logo
+# Caffeine
+# Dash to dock
+# Drop down terminal
+# Topicons Plus
