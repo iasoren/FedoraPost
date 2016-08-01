@@ -1,6 +1,6 @@
 # FedoraPost
 #What is this?
-This is a quick configuration script for Fedora 24+
+This is a quick configuration script for Fedora 24+.
 I use it to quickly setup my computers
 
 #Modifications 
