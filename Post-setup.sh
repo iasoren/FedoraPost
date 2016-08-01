@@ -1,6 +1,7 @@
 #! /bin/bash
 # This is a post-install setup script. It installs themes and programs I find useful or necessary.
 # Feel free to create new branches if desired.
+# WARNING: This script will be updated ittermitently and may have dead links, may not function, and may completely destroy all your data. I am not responsbile for any problems that may occur. You are using this at your own risk.
 
 # Gnome Tweak Tool and a few customizations
 dnf install -y gnome-tweak-tool
