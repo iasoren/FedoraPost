@@ -74,6 +74,9 @@ rpm -ivh atom.x86_64.rpm
 #Remove undesired packages
 dnf remove -y libreoffice*
 
+#Get Printer Driver (manual install)
+wget http://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.0.0-1.gz
+
 #This is a list of extensions to Gnome that I have installed/enabled
 # Applications Menu
 # Background logo
