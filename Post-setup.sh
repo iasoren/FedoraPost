@@ -51,9 +51,9 @@ dnf install -y wine
 dnf install -y qbittorrent
 
 #Insync
-rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-dnf config-manager --add-repo http://yum.insynchq.com/fedora/$releasever/
-dnf install -y insync
+#rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
+#dnf config-manager --add-repo http://yum.insynchq.com/fedora/$releasever/
+#dnf install -y insync
 
 #Multimedia
 dnf install -y vlc
