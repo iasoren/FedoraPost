@@ -16,6 +16,10 @@ dnf install -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion
 dnf update -y
 dnf install -y dnf-plugin-system-upgrade
 
+#Oh-my-zsh
+dnf install -y zsh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+
 #Virtualisation
 dnf install -y @virtualization
 dnf install -y libvirt
