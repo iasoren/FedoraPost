@@ -17,8 +17,8 @@ dnf update -y
 dnf install -y dnf-plugin-system-upgrade
 
 #Oh-my-zsh
-dnf install -y zsh
-wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+#dnf install -y zsh
+#wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 
 #Virtualisation
 dnf install -y @virtualization
@@ -34,17 +34,17 @@ dnf install -y MakeMKV
 dnf install -y libdvdcss
 dnf install -y ffmpeg
 
-dnf install -y eclipse
-dnf copr enable decathorpe/syncthing -y
-dnf install -y syncthing
-dnf install -y syncthing-gtk
-dnf install -y syncthing-inotify
+#dnf install -y eclipse
+#dnf copr enable decathorpe/syncthing -y
+#dnf install -y syncthing
+#dnf install -y syncthing-gtk
+#dnf install -y syncthing-inotify
 
 #Enable Syncthing
-systemctl --user enable syncthing.service
-systemctl --user enable syncthing-inotify.service
-systemctl --user start syncthing.service
-systemctl --user start syncthing-inotify.service
+#systemctl --user enable syncthing.service
+#systemctl --user enable syncthing-inotify.service
+#systemctl --user start syncthing.service
+#systemctl --user start syncthing-inotify.service
 
 
 #Games
@@ -61,6 +61,7 @@ dnf install -y qbittorrent
 
 #Multimedia
 dnf install -y vlc
+dnf install kaffeine
 
 #Get the desired rpms
 #wget https://github-cloud.s3.amazonaws.com/releases/40008106/609bffa0-416c-11e6-8299-49d0a807484d.rpm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160731T214806Z&X-Amz-Expires=300&X-Amz-Signature=47097897337834ae0ebc3f9af948dc792e411a53149557836164f6e87b3ce5c9&X-Amz-SignedHeaders=host&actor_id=5133584&response-content-disposition=attachment%3B%20filename%3Dgoogle-play-music-desktop-player-3.3.0.x86_64.rpm&response-content-type=application%2Foctet-stream
@@ -87,5 +88,4 @@ wget http://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.0
 # Background logo
 # Caffeine
 # Dash to dock
-# Drop down terminal
 # Topicons Plus
