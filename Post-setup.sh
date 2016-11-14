@@ -61,21 +61,18 @@ dnf install -y qbittorrent
 
 #Multimedia
 dnf install -y vlc
-dnf install kaffeine
-
-#Get the desired rpms
-#wget https://github-cloud.s3.amazonaws.com/releases/40008106/609bffa0-416c-11e6-8299-49d0a807484d.rpm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160731T214806Z&X-Amz-Expires=300&X-Amz-Signature=47097897337834ae0ebc3f9af948dc792e411a53149557836164f6e87b3ce5c9&X-Amz-SignedHeaders=host&actor_id=5133584&response-content-disposition=attachment%3B%20filename%3Dgoogle-play-music-desktop-player-3.3.0.x86_64.rpm&response-content-type=application%2Foctet-stream
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-wget http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office-10.1.0.5672-1.a21.x86_64.rpm
-wget https://atom-installer.github.com/v1.8.0/atom.x86_64.rpm
+dnf install -y kaffeine
 
 #Install the desired rpms
 dnf install -y lsb
 dnf install -y libXScrnSaver
-#rpm -ivh google-play-music-desktop-player-3.3.0.x86_64.rpm
-rpm -ivh google-chrome-stable_current_x86_64.rpm
-rpm -ivh wps-office-10.1.0.5672-1.a21.x86_64.rpm
-rpm -ivh atom.x86_64.rpm
+
+#Install the desired RPMs. They are now in the folder when downloading
+rpm -ivh /RPM/atom.rpm
+rpm -ivh /RPM/googlechrome.rpm
+rpm -ivh /RPM/wps-office.rpm
+rpm -ivh /RPM/music.rpm
+rpm -ivh /RPM/insync.rpm
 
 #Remove undesired packages
 dnf remove -y libreoffice*
