@@ -73,6 +73,7 @@ rpm -ivh /RPM/googlechrome.rpm
 rpm -ivh /RPM/wps-office.rpm
 rpm -ivh /RPM/music.rpm
 rpm -ivh /RPM/insync.rpm
+rpm -ivh /RPM/pomodoro.rpm
 
 #Remove undesired packages
 dnf remove -y libreoffice*
