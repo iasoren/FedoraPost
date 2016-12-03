@@ -12,6 +12,9 @@ dnf install -y paper-icon-theme
 #RPM Fusion Repos
 dnf install -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+#Facebook Messenger Repo
+wget https://bintray.com/aluxian/rpm/rpm -O /etc/yum.repos.d/bintray-aluxian-rpm.repo
+
 #Update the system
 dnf update -y
 dnf install -y dnf-plugin-system-upgrade
@@ -33,6 +36,8 @@ dnf install -y HandBrake-cli
 dnf install -y MakeMKV
 dnf install -y libdvdcss
 dnf install -y ffmpeg
+
+dnf install -y messengerfordesktop
 
 #dnf install -y eclipse
 #dnf copr enable decathorpe/syncthing -y
