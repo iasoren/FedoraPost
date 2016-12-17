@@ -75,7 +75,8 @@ dnf install -y libXScrnSaver
 #Install the desired RPMs. They are now in the folder when downloading
 rpm -ivh /RPM/atom.rpm
 rpm -ivh /RPM/googlechrome.rpm
-rpm -ivh /RPM/wps-office.rpm
+#Now using Office 2013 in Crossover 16, makes WPS obsolete
+#rpm -ivh /RPM/wps-office.rpm
 rpm -ivh /RPM/music.rpm
 rpm -ivh /RPM/insync.rpm
 rpm -ivh /RPM/pomodoro.rpm
