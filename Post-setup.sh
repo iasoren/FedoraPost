@@ -8,6 +8,7 @@ dnf install -y gnome-tweak-tool
 dnf config-manager --add-repo http://download.opensuse.org/repositories/home:snwh:paper/Fedora_24/home:snwh:paper.repo
 dnf install -y paper-gtk-theme
 dnf install -y paper-icon-theme
+#Now using Numix Icons installed through Fedy
 
 #RPM Fusion Repos
 dnf install -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -91,5 +92,5 @@ wget http://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.0
 # Applications Menu
 # Background logo
 # Caffeine
-# Dash to dock
+# Dash to panel
 # Topicons Plus
