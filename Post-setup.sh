@@ -44,10 +44,7 @@ dnf install -y libXScrnSaver
 cd RPM/
 rpm -ivh atom.rpm
 rpm -ivh music.rpm
-
-#Opera Install
-wget https://download.opera.com/download/get/?partner=www&opsys=Linux&package=RPM
-rpm -ivh opera*
+rpm -ivh opera.rpm
 
 #WPS Office Install
 wget http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office-11.1.0.8865-1.x86_64.rpm
