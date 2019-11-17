@@ -42,31 +42,9 @@ cd RPM/
 rpm -ivh atom.rpm
 rpm -ivh music.rpm
 rpm -ivh opera.rpm
+rpm -ivh wps.rpm
 
-#WPS Office Install
-#wget http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office-11.1.0.8865-1.x86_64.rpm
-#rpm -ivh wps*
-
-#Insync Install
-rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
-dnf config-manager --add-repo http://yum.insynchq.com/fedora/$releasever/
-#cd /
-#touch /etc/yum.repos.d/insync.repo
-#cd /etc/yum.repos.d/
-#echo -e "
-#[insync] \n
-#name=insync repo \n
-#baseurl=http://yum.insync.io/[DISTRIBUTION]/$releasever/ \n
-#gpgcheck=1 \n
-#gpgkey=https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key \n
-#enabled=1 \n
-#metadata_expire=120m \n
-#" > insync.repo
-dnf install -y insync
-
-#Remove undesired packages
-dnf remove -y libreoffice*
-
+echo "Make sure to install the following extensions
 
 #This is a list of extensions to Gnome that I have installed/enabled
 # Applications Menu
@@ -74,4 +52,6 @@ dnf remove -y libreoffice*
 # Caffeine
 # Dash to dock
 # Transparent top bar
-# Topicons Plus
+# Topicons Plus"
+
+echo "Make sure to install Insync"
