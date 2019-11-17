@@ -55,3 +55,4 @@ echo "Make sure to install the following extensions
 # Topicons Plus"
 
 echo "Make sure to install Insync"
+echo "Install WPS Office at http://linux.wps.com"
