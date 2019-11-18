@@ -17,6 +17,8 @@ dnf install -y dnf-plugin-system-upgrade
 dnf install -y gnome-tweak-tool
 #Now using Numix Icons installed through Fedy
 
+#i3 vs Sway
+dnf install -y sway light rofi
 
 #Virtualisation
 dnf install -y @virtualization
@@ -25,6 +27,7 @@ dnf install -y libvirt
 #Utilities
 dnf install -y nano
 dnf install -y ffmpeg
+dnf install -y snapd
 
 #DNF Programs
 dnf install -y steam
@@ -32,6 +35,10 @@ dnf install -y qbittorrent
 dnf install -y fedy
 dnf install -y vlc
 dnf install -y kaffeine
+
+
+#Adding alias
+echo "dnf="sudo dnf"" ~/.bashrc
 
 #Install the desired rpms
 dnf install -y lsb
