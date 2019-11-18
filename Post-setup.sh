@@ -18,7 +18,7 @@ dnf install -y gnome-tweak-tool
 #Now using Numix Icons installed through Fedy
 
 #i3 vs Sway
-dnf install -y sway light rofi
+#dnf install -y sway light rofi
 
 #Virtualisation
 dnf install -y @virtualization
@@ -44,12 +44,15 @@ echo "dnf="sudo dnf"" ~/.bashrc
 dnf install -y lsb
 dnf install -y libXScrnSaver
 
-#Install the desired RPMs. They are now in the folder when downloading
-cd RPM/
-rpm -ivh atom.rpm
-rpm -ivh music.rpm
-rpm -ivh opera.rpm
-rpm -ivh wps.rpm
+#Install the desired Extras. They are now in the folder when downloading
+rpm -ivh Installs/atom.rpm
+rpm -ivh Installs/music.rpm
+rpm -ivh Installs/opera.rpm
+rpm -ivh Installs/wps.rpm
+sh Installs/polo*amd64.run
+
+#Copying configs
+cp -ri .config/* /home/$USER/.config
 
 echo "Make sure to install the following extensions
 
