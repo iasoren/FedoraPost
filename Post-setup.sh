@@ -44,11 +44,15 @@ echo "dnf="sudo dnf"" ~/.bashrc
 dnf install -y lsb
 dnf install -y libXScrnSaver
 
+#Install Snaps
+dnf install snapd
+ln -s /var/lib/snapd/snap /snap
+snap install snap-store
+snap install --classic atom
+snap install wps-office
+snap install google-play-music-desktop-player
+
 #Install the desired Extras. They are now in the folder when downloading
-rpm -ivh Installs/atom.rpm
-rpm -ivh Installs/music.rpm
-rpm -ivh Installs/opera.rpm
-rpm -ivh Installs/wps.rpm
 sh Installs/polo*amd64.run
 
 #Copying configs
