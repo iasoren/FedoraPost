@@ -56,6 +56,11 @@ sh Installs/polo*amd64.run
 
 #Copying configs
 #cp -ri .config/* /home/$USER/.config
+cp -ri Installs/extensions/* /home/$USER/.local/share/gnome-shell/extensions/
+
+mkdir /home/$USER/.themes
+cp -ri apricity*.zip /home/$USER/.theme/
+
 
 echo "Make sure to install the following extensions
 
@@ -76,4 +81,3 @@ echo "Make sure to install the following extensions
 # Shellshape
 
 echo "Make sure to install Insync"
-echo "Install WPS Office at http://linux.wps.com"
