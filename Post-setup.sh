@@ -26,6 +26,7 @@ dnf install -y libvirt
 dnf install -y nano
 dnf install -y ffmpeg
 dnf install -y snapd
+dnf install -y dconf-editor
 
 #DNF Programs
 dnf install -y steam
@@ -54,7 +55,7 @@ snap install google-play-music-desktop-player
 sh Installs/polo*amd64.run
 
 #Copying configs
-cp -ri .config/* /home/$USER/.config
+#cp -ri .config/* /home/$USER/.config
 
 echo "Make sure to install the following extensions
 
@@ -63,8 +64,16 @@ echo "Make sure to install the following extensions
 # Background logo
 # Caffeine
 # Dash to dock
+# Frippery move clock
+# Horizontal workspaces
+# Media Player indicator
+# Remove dropdown arrows
 # Transparent top bar
-# Topicons Plus"
+# Topicons Plus
+# User themes
+
+#Need to configure
+# Shellshape
 
 echo "Make sure to install Insync"
 echo "Install WPS Office at http://linux.wps.com"
