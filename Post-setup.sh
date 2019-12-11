@@ -49,7 +49,15 @@ ln -s /var/lib/snapd/snap /snap
 snap install snap-store
 snap install --classic atom
 snap install wps-office
-snap install google-play-music-desktop-player
+
+#Install Flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub org.pitivi.Pitivi
+flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub com.slack.Slack
+flatpak install -y flathub org.audacityteam.Audacity
+flatpak install -y flathub org.videolan.VLC
+flatpak install -y flathub com.calibre_ebook.calibre
 
 #Install the desired Extras. They are now in the folder when downloading
 sh Installs/polo*amd64.run
@@ -80,4 +88,4 @@ echo "Make sure to install the following extensions
 #Need to configure
 # Shellshape
 
-echo "Make sure to install Insync"
+echo "Make sure to install Insync, Lightwords, Ardour"
