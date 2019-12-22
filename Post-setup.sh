@@ -88,4 +88,5 @@ echo "Make sure to install the following extensions
 #Need to configure
 # Shellshape
 
+
 echo "Make sure to install Insync, Lightwords, Ardour"
